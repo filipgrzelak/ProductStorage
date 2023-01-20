@@ -15,9 +15,9 @@ public class ProductConfig {
         return args -> {
             Product product1 = new Product(
                     "idaes",
-                    "Majtki",
-                    "Bielizna",
-                    "Ładne majtki brazyliany",
+                    "Koszulka",
+                    "Outfit",
+                    "Koszulka z nadrukiem AC/DC",
                     4.0,
                     true
             );
@@ -48,17 +48,17 @@ public class ProductConfig {
             );
             Product product5 = new Product(
                     "sd",
-                    "Stanik",
-                    "Bielizna",
-                    "Stanik z push upem",
+                    "Kolczyki",
+                    "Biżuteria",
+                    "Kolczyki ze złota",
                     4.3,
                     true
             );
             Product product6 = new Product(
                     "sdww",
-                    "Figi",
-                    "Bielizna",
-                    "Majteczki w kropeczki hohohoho",
+                    "Szpadel",
+                    "Ogród",
+                    "Kopie najlepsze dziury",
                     4.3,
                     true
             );
