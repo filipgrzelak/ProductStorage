@@ -1,5 +1,7 @@
-package com.example.demo.product;
+package com.example.demo.product.service;
 
+import com.example.demo.product.model.Product;
+import com.example.demo.product.database.interfaces.ProductRepository;
 import com.example.demo.product.exceptions.ProductDoesNotExist;
 import com.example.demo.product.exceptions.ProductWithThisSkuAlreadyExist;
 import com.example.demo.product.exceptions.ProductWithThisSkuDoesNotExistException;

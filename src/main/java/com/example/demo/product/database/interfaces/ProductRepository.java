@@ -1,5 +1,6 @@
-package com.example.demo.product;
+package com.example.demo.product.database.interfaces;
 
+import com.example.demo.product.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -13,13 +14,6 @@ public interface ProductRepository
 
     @Query("SELECT p FROM Product p WHERE p.sku = ?1")
     Optional<Product> findProductBySku(String sku);
-
-    @Query("SELECT p FROM Product p WHERE p.category = ?1 AND p.description LIKE %?2% AND p.opinion >= ?3 AND p.opinion <= ?4")
-    Optional<List<Product>> findProductsByCategorySearchPhraseOpinionAvgMinAndOpinionAvgMax(
-            String categoryName,
-            String searchPhrase,
-            Double opinionAvgMin,
-            Double opinionAvgMax);
 
     @Query("SELECT p FROM Product p WHERE p.category in ?1")
     Optional<List<Product>> findProductsByCategory(String categoryName);

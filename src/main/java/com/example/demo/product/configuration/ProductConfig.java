@@ -1,5 +1,7 @@
-package com.example.demo.product;
+package com.example.demo.product.configuration;
 
+import com.example.demo.product.model.Product;
+import com.example.demo.product.database.interfaces.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
